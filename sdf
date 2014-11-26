@@ -1,0 +1,370 @@
+@import url(reset.css);
+
+#wrapper {
+   width: 1024px;
+   height: 1800px;
+   margin: 0px auto;
+   outline: 1px solid #CCCCCC;
+    
+}
+
+#top-lines{
+    height:18px;
+    background-image:url(../images/top-line.png);
+    background-repeat:repeat-x;
+    background-color: #CCCCCC; /*** Если пользователь зашел с откл.картинками*/  
+}
+
+/*Начало блока header*/
+
+#header {
+    height: 157px;
+    outline: 0px solid #cc0000;
+    position: relative; /*1) Создаем относительное позиционирование этому блоку,что бы как нужно расположить картинку с  лого*/
+}
+
+
+#logo {
+     width: 287px;
+     height: 105px;
+     background-image:url(../images/logo.png);
+     background-repeat: no-repeat;
+     outline: 0px solid #cc0000;
+     position: absolute; /*2) Крутим картинку как нам заблагорассудиться!*/
+     left: 54px;
+     top:29px;
+}
+
+#logo a {  /*3)Делаем ссылку блочным элементом!что бы при клике на любом месте картинки открывался сайт*/
+    display: block;/*4)Вот этот герой,который все это делает!превращает строку в блок!!! =)*/
+    height: 105px;/*5 )Надо указат высь,а то не поймет браузер где надо делать площадб под ссыль*/
+    width: 287px;
+    cursor:pointer; /*6  )Принудительная "рука" после того как ссыль делаешь в блок некотроые браузеры не определяют ее""*/
+}
+
+#faq {
+    height: 164px;
+    width: 82px;
+     background-image:url(../images/faq.png);
+     position: absolute;
+     right: 30px;
+     top: -19px;
+}
+
+#faq a {  /*3)Делаем ссылку блочным элементом!что бы при клике на любом месте картинки открывался сайт*/
+    display: block;/*4)Вот этот герой,который все это делает!превращает строку в блок!!! =)*/
+    height: 164px;/*5 )Надо указат высь,а то не поймет браузер где надо делать площадб под ссыль*/
+    width: 82px;
+    cursor:pointer; /*6  )Принудительная "рука" после того как ссыль делаешь в блок некотроые браузеры не определяют ее""*/
+}
+
+#nav{
+    width: 540px;
+    height: 30px;
+    outline: 0px solid #cc0000;
+    position: absolute;
+    top: 56px;
+    left:340px;
+}
+
+#nav li {            /*7) Для навигации в секции li создаем правило*/
+    float:left;
+    outline: 0px solid #cc0000; /*Шоб видеть границы что мы творим*/
+    margin-right: 27px; /*8)Отступ между буквами навигациии*/
+}
+
+#nav li a{  /*9)Правило для ссылок в секции li в id nav */
+
+    
+    text-decoration: none;  /*10)Не будут выглядить как стандартные ссылки с подчеркиванием,цветом после посещения и.т.д */
+    font:20px Arial,sans-serif;
+    color:#3f3f3f;
+}
+
+#nav li a.active,#nav li a:hover{  /*11)Правило для первого слова в панели навигации оно всегда синее)))для удобства восприятия дом страницы)) */
+    color: #2c789c;             /*12)Через запятую перечислили объекты навигации,при наведении будут подсвечены синим цветом,присвоив псевдоселектор Hover и перечислив свойства через запятую)) */
+    
+}
+
+/*Конец блока Header */
+
+/*Начало блока people */
+
+#people {
+    height: 404px;
+    outline:0px solid #3f3f3f;
+     background-image:url(../images/peopleBG.png);
+     background-repeat: no-repeat;
+     background-position: 74px 29px;
+     position: relative;
+}
+
+#peopleIMG {
+     outline:0px solid #3f3f3f;
+     height: 403px;
+     width: 403px;
+    position: absolute;
+    right: 55px;
+    top: 0px;
+     background-image:url(../images/people.png);
+     z-index:5
+}
+
+#slogan{
+    width: 377px;
+    height: 80px;
+    outline: 0px solid #cccccc;
+    position: absolute;
+    top:207px;
+    right: 632px;
+    text-align: right;
+    padding-top: 8px;
+    
+}
+
+#slogan h1{
+    font:bold 23px Arial,sans-serif ;
+    color: #1b1e1d;
+    text-transform: uppercase;
+    
+}
+
+#slogan p {
+    
+    font:16px Arial,sans-serif;
+    color: #2c789c;
+}
+
+#forline{
+    height: 96px;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    outline: 0px solid #cc0000;
+    width: 1024px;
+     background-image:url(../images/forlineBG.png);
+     background-repeat: repeat-y;
+     z-index:3;/*Выделить приоритет изображения,ктр будет перекрывать другой блок*/
+    
+    
+}
+
+/*Конец блока People*/
+
+/*Начало цветного блока */
+#colors{
+   
+    outline: 0px solid #cc0000;
+     background-image:url(../images/colorsBG.png);
+     background-repeat: repeat-y;
+     padding:0 48px 0 41px ;
+    
+}
+#blue{
+    width: 292px;
+    
+    float:left;
+    background-color: #2c789c;
+    padding-left: 14px;
+    background-image: url(../images/e1.png);
+    background-repeat: no-repeat;
+    background-position: 250px 2px;
+    
+    
+}
+#yellow{
+    width: 302px;
+    
+  float:left;
+    background-color: #E5B00D;
+     padding-left: 19px; 
+      background-image: url(../images/e2.png);
+    background-repeat: no-repeat;
+    background-position: 267px 2px;
+      
+    
+}
+#green{
+    width: 282px;
+    
+    float:left;
+    background-color: #97ba15;  
+    padding-left: 24px;  
+     background-image: url(../images/e3.png);
+    background-repeat: no-repeat;
+    background-position: 241px 2px;
+      
+}
+
+#blue,#yellow,#green{
+    
+    color:#ffffff;
+    padding-top:13px;
+    position: relative;
+     
+}
+
+#colors h2{
+    font:19px Arial,sens-serif;
+    padding-bottom: 11px;
+    margin-left: -7px;
+}
+
+#colors p{
+    
+    padding-bottom:10px;
+    font:16px Arial,sens-serif;
+    margin-left: 10px; 
+}
+
+#colors a{
+    text-decoration: none;
+    color:#525252;
+    display: block;    /*Делаем блочный элемент нашим мини кнопочкам  */
+    width: 99px;  /*Задаем им размеры */
+    height: 26px;
+    /*background-color: #FFFFFF;  цвет  что бы определиться с размерами будующей кнопки*/
+    background-image: url(../images/readmore.png); /*А потом вставляем круглую кнопку */
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.clear{
+    clear:both;
+    
+}
+
+.romb1{
+    width: 20px;
+    height: 40px;
+    position:absolute;
+    background-image: url(../images/romb1.png);
+    left:0;
+    top: 60px;
+}
+
+.romb2{
+    width: 20px;
+    height: 40px;
+    position:absolute;
+    background-image: url(../images/romb2.png);
+    left:0;
+    top: 60px;
+}
+
+#yellow a, #green a, #yellow p, #green p {
+    margin-left: 2px;
+    
+}
+
+/*конец цветного блока */
+
+
+#blackandwhite {
+    height: 225px;
+    outline: 1px solid #cccccc;
+    background-image:url(../images/colorsBG.png);
+    background-repeat: repeat-y;
+    position: relative;
+    padding: 17px 55px 30px 55px;
+}
+
+#bleft,#bright{
+    position: absolute;
+    width: 34px;
+    height: 135px;
+}
+
+#bleft{
+    background-image: url(../images/bleft.png);
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+}
+
+#bright{
+    background-image: url(../images/bright.png);
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    }
+    
+#bcontent{
+    height:225px ;
+    outline: 0px solid #cc0000;
+    width: 620px;
+    float:left;
+}
+
+#bform{
+    height:225px ;
+    width: 260px;
+    outline: 0px solid #cc0000;
+    margin-left: 30px;
+    float:left;
+    position: relative;
+    z-index: 5;
+}
+
+#bcontent h2,#bform h2{
+    font:24px Arial, sens-serif;
+    color: #000000;
+    margin-bottom: 11px;
+}
+#bcontent h2{
+    height: 34px;
+    margin-bottom: 0;
+}
+
+#bcontent p.strong{
+    color: #1d1e1b;
+    font:16px Arial, sens-serif;
+    height:56px;  
+}
+
+#bcontent p{
+    color: #7b7d78;
+    font:16px Arial, sens-serif;
+    margin-bottom: 13px;  
+    height:109px;
+}
+
+#bcontent a{
+    text-decoration: none;
+    color:#b6b7d6;
+    display: block;    /*Делаем блочный элемент нашим мини кнопочкам  */
+    width: 99px;  /*Задаем им размеры */
+    height: 18px;
+    /*background-color: #FFFFFF;  цвет  что бы определиться с размерами будующей кнопки*/
+    background-image: url(../images/readmoreblack.png); /*А потом вставляем круглую кнопку */
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 5px 18px;
+    
+}
+
+
+#bform input {
+    width: 247px;
+    height: 31px;
+    outline: 0px solid #dedede;
+    margin-bottom: 6px;
+    color:#bababa;
+    font: 16px Arial, sans-serif;
+    padding-left:15px;
+   
+}
+
+#bform input.button{
+    width: 99px;
+    height: 28px;
+    border: none;
+    padding: 28px 0 0 0;
+    margin: 0;
+    
+    
+    
+}
+
